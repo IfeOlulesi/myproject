@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boards</title>
+    </head>
+
+    <body>
+        <h1>Boards</h1>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Board</th>
+                    <th>Posts</th>
+                    <th>Topics</th>
+                    <th>Last Post</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for board in boards %}
+                <tr>
+                    <td>
+                        {{ board.name }} <br>
+                        <small style='color:brown'>{{ board.description }}</small>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </body>
+
+</html>
