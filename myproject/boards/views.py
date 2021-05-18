@@ -11,3 +11,4 @@ def home(request):
 def board_topics(request, id):
     board = get_object_or_404(Board, pk=id)
     return render(request, 'topics.html', {'board': board})
+
